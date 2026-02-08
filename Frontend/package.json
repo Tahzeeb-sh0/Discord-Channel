@@ -10,8 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "axios": "^1.13.5",
+    "face-api.js": "^0.22.2",
+    "lucide-react": "^0.563.0",
+    "motion": "^12.33.0",
+    "postprocessing": "^6.38.2",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.13.0",
+    "tailwindcss": "^4.1.18",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

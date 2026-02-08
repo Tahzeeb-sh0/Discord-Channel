@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class RoomServices {
 
-    private RoomRepository roomRepository;
+    private final RoomRepository roomRepository;
     public RoomServices(RoomRepository roomRepository) {
         this.roomRepository = roomRepository;
     }
