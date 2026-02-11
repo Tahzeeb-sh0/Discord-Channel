@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,12 +17,14 @@ const Header = () => {
         <div className="bg-transparent backdrop-blur-md border border-slate-700/50 rounded-2xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
             {/* Logo */}
+            <Link to="/">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
                 <img src="/speech-bubble.png" alt="Logo" className="w-6 h-6" />
               </div>
               <span className="text-white font-semibold text-lg">ChatSonnet</span>
             </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
@@ -41,9 +44,12 @@ const Header = () => {
               <button className="text-slate-300 hover:text-white transition-colors text-sm font-medium px-3 py-1.5">
                 Sign In
               </button>
-              <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-1.5 rounded-xl text-sm font-medium transition-colors">
-                Get Started
-              </button>
+              <Link to="/in">
+            <button className="group relative px-6 sm:px-8 py-2.5 sm:py-3 border border-white text-white rounded-full font-medium text-sm sm:text-[15px] tracking-wide overflow-hidden transition-all duration-500 hover:text-black">
+              <span className="absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition-all duration-500 ease-out"></span>
+              <span className="relative z-10">Get Started</span>
+            </button>
+          </Link>
             </div>
 
             {/* Mobile Menu Button */}
