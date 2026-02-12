@@ -258,8 +258,9 @@ const CreateRoomPage = () => {
                   </div>
 
                   {/* Submit Button - Premium */}
-                  <button
+                  <Link to="/in/chat"
                     type="submit"
+
                     disabled={!roomName || !roomId}
                     className="w-full relative group/btn overflow-hidden rounded-xl disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-300"
                   >
@@ -279,7 +280,7 @@ const CreateRoomPage = () => {
 
                     {/* Shine effect */}
                     <div className="absolute inset-0 -translate-x-full group-hover/btn:animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
-                  </button>
+                  </Link>
                 </form>
 
                 {/* Footer */}

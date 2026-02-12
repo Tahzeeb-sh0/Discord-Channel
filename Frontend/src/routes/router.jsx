@@ -4,6 +4,7 @@ import Layout from '../layout/Layout'
 import HomePage from '../pages/HomePage'
 import CreateRoomPage from '../pages/CreateRoomPage'
 import ChatPage from '../pages/ChatPage'
+import PricingPage from '../pages/PricingPage'
 
 const Router = () => {
   return (
@@ -13,6 +14,7 @@ const Router = () => {
             <Route index element={<HomePage />} />
             <Route path="/in" element={<CreateRoomPage />} />
             <Route path="/in/chat" element={<ChatPage />} />
+            <Route path="/in/pricing" element={<PricingPage />} />
             </Route>
            
         </Routes>
